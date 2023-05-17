@@ -1,0 +1,218 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Helvetica Neue', Arial, sans-serif;
+}
+.main{
+  background-color: #eee;
+  padding: 3rem 2rem 1rem;
+}
+
+
+ .main #title{
+  font-size: 3.5rem;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  
+}
+.main #container{
+  display: flex;
+  max-width: 1200px;
+  padding: 60px 30px 40px 30px;
+  background-color: #444;
+  margin: 0 auto;
+  background: rgb(255, 255, 255,0.2);
+  -moz-box-shadow: 6px 5px 4px #fff;
+  -webkit-box-shadow: 6px 5px 4px #fff;
+  box-shadow: 6px 5px 4px #000;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+  border: 2px solid #222;
+  overflow-y: hidden;
+}
+.main #imageContainer{
+  position: relative;
+  flex: 1 1 400px;
+  overflow: hidden;
+  height: 60vh;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+  background: rgb(255, 255, 255,0.2);
+  -moz-box-shadow: 4px 5px 4px #fff;
+  -webkit-box-shadow: 4px 5px 4px #fff;
+  box-shadow: 4px 5px 4px #000;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  border: 2px solid #222;
+  cursor: pointer;
+}
+.main #imageContainer:hover #image{
+  transform: scale(1.1);
+}
+#image{
+  width: 100%;
+  display: block;
+  height: 60vh;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.main #img-caption{
+  flex: 1 1 400px;
+  padding: 20px 0px 10px 30px;
+  height: auto;
+   
+}
+a:hover{
+  color: red;
+}
+.main .hightlights{
+  height: auto;
+  line-height: 2.2rem;
+  text-indent: 40px;
+  text-align: justify;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+#tribute-info{
+  padding: 10px;
+  margin-top: 20px;
+  color: #444;
+}
+h2{
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  
+}
+
+.main #medalofValor{
+  margin: 0 auto 50px auto;
+  max-width: 1000px;
+  padding: 20px;
+  text-align: left;
+  
+}
+li{
+  margin: 16px 0;
+  display: list-item;
+  margin-left: 100px;
+}
+
+.p-title{
+  font-size: 1.3rem;
+}
+.tribute-desc{
+  text-align: center;
+  font-size: 1.2rem;
+  color: green;
+}
+a:link{
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 912px){
+  #image{
+    height: 50vh;
+  }.main #imageContainer{
+    height: 50vh;
+  }.main #img-caption{
+    height: auto;
+  }
+  .main .hightlights{
+    height: auto;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 820px){
+  .main #container{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+  }.main #img-caption{
+    font-size: 1.3rem;
+   margin: 20px 0;
+    padding: 0;
+    flex: 1 1 auto;
+    line-height: 1.6rem;
+    justify-content: flex-start;
+    display: flex;
+  }
+  .main .hightlights{
+    height: auto;
+  }.main #medalofValor{
+    width: 100%;
+  }#image{
+    height: 60vh;
+  }.main #imageContainer{
+    height: 60vh;
+  }.main .hightlights{
+    height: auto;
+    line-height: 2.2rem;
+    text-indent: 40px;
+    text-align: justify;
+    color: #000;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 460px){
+  #main{
+    padding: 20px;
+  }.main #title{
+    font-size: 2.5rem;
+  }
+  #medalofValor{
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }h2{
+    font-size: 1.5rem;
+  }li{
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 280px){
+  .main #title{
+    font-size: 2rem;
+    margin-top: 30px;
+  }.main #container{
+    padding: 10px;
+  }.main .hightlights{
+    line-height: 1.7rem;
+    font-size: 1rem;
+  }h2{
+    font-size: 1.4rem;
+  padding: 10px 20px;
+  }#tribute-info{
+    padding: 5px;
+  }.main #medalofValor{
+    margin: 0 auto;
+    padding: 8px;
+    text-align: left; 
+  }li{
+    margin-left: 10px;
+    text-align: justify;
+  }.p-title{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 15px 0;
+  }.tribute-desc{
+    text-align: center;
+    font-size: 1rem;
+    color: green;
+  }a:link{
+    color: red;
+    font-size: 1rem;
+  }#image{
+    height: 70vh;
+  }
+
+  }
